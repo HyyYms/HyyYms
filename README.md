@@ -1,16 +1,47 @@
-### Hi there 👋
+## 一、自我介绍
 
-<!--
-**HyyYms/HyyYms** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### （一）、自我概述
 
-Here are some ideas to get you started:
+* 姓名：黄裕煜
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* 班级：18网络工程（4）班
+
+* 邮箱：570911275@qq.com
+
+### （二）、技术技能及兴趣爱好
+
+* 技术方向：Java技术后端开发
+
+* 主要技能：利用Spring Boot、Mybatis、Redis、Spring、Spring MVC等框架搭建小程序或网站的后端部分。
+
+* 兴趣爱好：阅读网络小说（差不多是小学毕业时接触网络小说，将近10年左右喜欢阅读网络小说）
+
+### （三）、个人学习以及项目经历
+
+自大一上通过输入“Hello World”正式打开计算机世界的大门，大一下学期通过长达几个月的项目考核加入Vtmer工作室，目前是维生素工作室后台组成员。同工作室的小伙伴们一同完成过数个项目，其中包括维生素招新网站、衣三邦小程序以及ITTA任务管理小程序等多个项目。
+
+
+
+## 二、软工五问
+
+1、团队利用 GitHub 进行协作时，如何进行分支的管理比较高效？
+
+2、软件开发的流程是什么样的？
+
+3、软件开发过程中会用到哪些文档？应该如何进行管理？
+
+4、如何对一个项目的代码进行规范以提高合作效率？
+
+5、如何提高软件的可维护性？
+
+
+
+## 三、预期收获
+
+1、熟练使用Markdown和GitHub
+
+2、了解软件开发的流程
+
+3、可以学会测试、分析以及维护软件 
+
+
