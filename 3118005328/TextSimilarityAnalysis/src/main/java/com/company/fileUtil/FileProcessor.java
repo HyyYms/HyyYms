@@ -1,4 +1,4 @@
-package com.company;
+package com.company.fileUtil;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
  * @create: 2020-09-23 13:28
  **/
 public class FileProcessor {
-    static String readFileToString(String name) {
+    public static String readFileToString(String name) {
         StringBuilder str = new StringBuilder();
         String strLine;
         //将txt文件按行读入str中
@@ -32,7 +32,7 @@ public class FileProcessor {
         return str.toString();
     }
 
-    static void writeTxt(Double elem, String name) {
+    public static void writeTxt(Double elem, String name) {
         // 将查重结果输出至文件中
         String ans = Double.toString(elem);
         File file = new File(name);

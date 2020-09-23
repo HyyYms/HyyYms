@@ -1,4 +1,4 @@
-package com.company;
+package com.company.algorithm;
 
 import com.hankcs.hanlp.seg.common.Term;
 import com.hankcs.hanlp.tokenizer.IndexTokenizer;
@@ -14,11 +14,11 @@ import java.util.Vector;
  * @author: Mr.Huang
  * @create: 2020-09-23 13:39
  **/
-class ComputeCos {
+public class ComputeCos {
 
-    static double computeCos(String s1, String s2) {
-        Map<String, Vector<Integer>> offset1 = new TreeMap<>();
-        Map<String, Vector<Integer>> offset2 = new TreeMap<>();
+    public static double computeCos(String s1, String s2) {
+        Map<String, Vector<Integer>> offset1 = new TreeMap<String, Vector<Integer>>();
+        Map<String, Vector<Integer>> offset2 = new TreeMap<String, Vector<Integer>>();
         //分词
         List<Term> termList = IndexTokenizer.segment(s1);
         int pos = 0;
@@ -42,7 +42,7 @@ class ComputeCos {
                 }
             }
             if (offset.get(news.toString()) == null) {
-                Vector<Integer> off = new Vector<>(100);
+                Vector<Integer> off = new Vector<Integer>(100);
                 off.add(pos);
                 offset.put(news.toString(), off);
             }
