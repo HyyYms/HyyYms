@@ -33,6 +33,7 @@ public class FileProcessor {
     }
 
     static void writeTxt(Double elem, String name) {
+        // 将查重结果输出至文件中
         String ans = Double.toString(elem);
         File file = new File(name);
         FileWriter fw = null;

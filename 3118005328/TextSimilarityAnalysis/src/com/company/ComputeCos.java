@@ -14,12 +14,10 @@ import java.util.Vector;
  * @author: Mr.Huang
  * @create: 2020-09-23 13:39
  **/
-public class ComputeCos {
+class ComputeCos {
 
     static double computeCos(String s1, String s2) {
-        // 词出现的位置
         Map<String, Vector<Integer>> offset1 = new TreeMap<>();
-        //按键值排序
         Map<String, Vector<Integer>> offset2 = new TreeMap<>();
         //分词
         List<Term> termList = IndexTokenizer.segment(s1);
