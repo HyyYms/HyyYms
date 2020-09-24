@@ -16,22 +16,34 @@ import java.util.Vector;
  **/
 public class ComputeCos {
 
+    /**
+     * 计算余弦值
+     * @param s1
+     * @param s2
+     * @return
+     */
     public static double computeCos(String s1, String s2) {
         Map<String, Vector<Integer>> offset1 = new TreeMap<String, Vector<Integer>>();
         Map<String, Vector<Integer>> offset2 = new TreeMap<String, Vector<Integer>>();
         //分词
         List<Term> termList = IndexTokenizer.segment(s1);
         int pos = 0;
-        makeTxt(termList, offset1, pos);
+        processTxt(termList, offset1, pos);
         //相同方式处理第二个文本
         termList = IndexTokenizer.segment(s2);
         pos = 0;
-        makeTxt(termList, offset2, pos);
+        processTxt(termList, offset2, pos);
         //计算余弦
         return getCos(offset1, offset2);
     }
 
-    private static void makeTxt(List<Term> termList, Map<String, Vector<Integer>> offset, int pos) {
+    /**
+     * 处理文本文件
+     * @param termList
+     * @param offset
+     * @param pos
+     */
+    private static void processTxt(List<Term> termList, Map<String, Vector<Integer>> offset, int pos) {
         for (Term term : termList) {
             String s = term.toString();
             StringBuilder news = new StringBuilder();
@@ -51,6 +63,12 @@ public class ComputeCos {
         }
     }
 
+    /**
+     * 获取余弦值
+     * @param offset1
+     * @param offset2
+     * @return
+     */
     private static double getCos(Map<String, Vector<Integer>> offset1, Map<String, Vector<Integer>> offset2) {
         int cnt = 0;
         double up = 0, down1 = 0, down2 = 0, sum = 0;

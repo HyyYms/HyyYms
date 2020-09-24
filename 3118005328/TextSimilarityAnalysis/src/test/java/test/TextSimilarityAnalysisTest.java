@@ -1,4 +1,4 @@
-package com.company.test;
+package test;
 
 import com.company.algorithm.ComputeCos;
 import com.company.fileUtil.FileProcessor;

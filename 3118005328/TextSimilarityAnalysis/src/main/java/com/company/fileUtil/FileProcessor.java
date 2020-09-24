@@ -10,6 +10,12 @@ import java.nio.charset.StandardCharsets;
  * @create: 2020-09-23 13:28
  **/
 public class FileProcessor {
+
+    /**
+     * 将文件转换为String类型
+     * @param name
+     * @return
+     */
     public static String readFileToString(String name) {
         StringBuilder str = new StringBuilder();
         String strLine;
@@ -32,6 +38,11 @@ public class FileProcessor {
         return str.toString();
     }
 
+    /**
+     * 将查重结果输出至文本文件
+     * @param elem
+     * @param name
+     */
     public static void writeTxt(Double elem, String name) {
         // 将查重结果输出至文件中
         String ans = Double.toString(elem);
