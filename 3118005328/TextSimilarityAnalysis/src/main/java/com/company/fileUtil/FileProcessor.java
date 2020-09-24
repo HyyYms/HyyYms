@@ -1,5 +1,7 @@
 package com.company.fileUtil;
 
+import com.company.exception.EmptyTextException;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
@@ -13,6 +15,7 @@ public class FileProcessor {
 
     /**
      * 将文件转换为String类型
+     *
      * @param name
      * @return
      */
@@ -35,11 +38,15 @@ public class FileProcessor {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        if (str.length() == 0){
+            throw new EmptyTextException("该文件为空文件");
+        }
         return str.toString();
     }
 
     /**
      * 将查重结果输出至文本文件
+     *
      * @param elem
      * @param name
      */
